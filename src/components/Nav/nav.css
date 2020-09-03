@@ -32,11 +32,16 @@
 
 .nav-item {
   border-left: 2px #ffffff00 solid;
+  cursor: pointer;
 }
 
 .nav-item:hover {
   background: #54799c5b;
   border-left: 2px #54799c solid;
+}
+
+.fas {
+  margin-right: 8px;
 }
 
 li {

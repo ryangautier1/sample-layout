@@ -22,12 +22,12 @@ function Nav() {
 
       <nav className="fixed-right side-nav">
         <ul className="nav-items nav flex-column">
-          <li className="nav-item nav-link">Dashboard</li>
-          <li className="nav-item nav-link">Billing</li>
-          <li className="nav-item nav-link">Catalog</li>
-          <li className="nav-item nav-link">Insights</li>
-          <li className="nav-item nav-link">Tools</li>
-          <li className="nav-item nav-link">Settings</li>
+          <li className="nav-item nav-link"><i className="fas fa-tachometer-alt"></i>Dashboard</li>
+          <li className="nav-item nav-link"><i class="fas fa-credit-card"></i>Billing</li>
+          <li className="nav-item nav-link"><i class="fas fa-briefcase"></i>Catalog</li>
+          <li className="nav-item nav-link"><i class="fas fa-chart-bar"></i>Insights</li>
+          <li className="nav-item nav-link"><i class="fas fa-tools"></i>Tools</li>
+          <li className="nav-item nav-link"><i class="fas fa-cog"></i>Settings</li>
         </ul>
       </nav>
     </div>
