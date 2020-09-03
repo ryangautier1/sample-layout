@@ -11,6 +11,7 @@
   height: calc(100vh - 56px);
   margin: 56px 0 0 0;
   width: 0;
+  background: #414143;
   transition: ease 0.4s;
 }
 
@@ -27,4 +28,18 @@
 
 .nav-items-open {
   left: 0px;
+}
+
+.nav-item {
+  border-left: 2px #ffffff00 solid;
+}
+
+.nav-item:hover {
+  background: #54799c5b;
+  border-left: 2px #54799c solid;
+}
+
+li {
+  color: #ddd;
+  font-weight: 500;
 }

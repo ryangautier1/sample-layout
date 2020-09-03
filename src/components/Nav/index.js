@@ -20,7 +20,7 @@ function Nav() {
       </header>
 
 
-      <nav className="fixed-right side-nav bg-dark">
+      <nav className="fixed-right side-nav">
         <ul className="nav-items nav flex-column">
           <li className="nav-item nav-link">Dashboard</li>
           <li className="nav-item nav-link">Billing</li>
