@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/FMTC-Logo.svg';
 import './nav.css';
 
 function Nav() {
@@ -9,12 +10,15 @@ function Nav() {
 
   return (
     <div className="position-absolute z-10">
-        <header className="navbar navbar-light bg-white fixed-top">
+      <header className="navbar navbar-light bg-white fixed-top shadow-sm">
+        <div>
+          <img src={logo} alt="FMTC logo" className="logo" />
           <button className="navbar-toggler" type="button" onClick={() => toggleNav()}>
             <span className="navbar-toggler-icon"></span>
           </button>
-        </header>
-      
+        </div>
+      </header>
+
 
       <nav className="fixed-right side-nav bg-dark">
         <ul className="nav-items nav flex-column">
