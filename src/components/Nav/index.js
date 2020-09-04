@@ -3,13 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/FMTC-Logo.svg';
 import './nav.css';
 
-function Nav() {
+function Nav(props) {
+  const { toggleNav } = props;
   const [activeTab, setActiveTab] = useState("");
-  // toggles the side nav bar
-  const toggleNav = () => {
-    document.querySelector(".side-nav").classList.toggle("nav-open");
-    document.querySelector(".nav-items").classList.toggle("nav-items-open");
-  }
+  
 
   const changeActiveTab = (tab) => {
     if (activeTab !== "") {
