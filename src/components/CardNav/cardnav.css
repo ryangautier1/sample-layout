@@ -1,0 +1,12 @@
+.cardnav {
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 49px);
+  width: 300px;
+  border-right: 1px solid #aaa;
+  padding: 12px 20px;
+}
+
+.card-body {
+  padding-left: 320px;
+}
