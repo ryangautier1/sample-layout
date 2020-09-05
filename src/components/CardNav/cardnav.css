@@ -3,10 +3,32 @@
   bottom: 0;
   height: calc(100% - 49px);
   width: 300px;
-  border-right: 1px solid #aaa;
-  padding: 12px 20px;
+  border-right: 1px solid #ccc;
+}
+
+.cardnav li {
+  color: #777;
+  font-weight: 500;
 }
 
 .card-body {
   padding-left: 320px;
+}
+
+.card-nav-item {
+  padding: 10px 20px;
+  border-bottom: solid 1px #ccc;
+  cursor: pointer;
+}
+
+.card-nav-item:hover {
+  background: #f5f5f5;
+}
+
+.card-nav-item-active {
+  background: #f68838;
+}
+
+.card-nav-item:nth-last-child(1) {
+  border-bottom: none;
 }

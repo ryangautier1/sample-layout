@@ -32,71 +32,71 @@ function Nav(props) {
 
       <nav className="fixed-right side-nav">
         <ul className="nav-items nav flex-column">
-          <li className="nav-item nav-link nav-menu-header"
+          <li className="main-nav-item nav-item nav-link nav-menu-header"
             data-toggle="collapse" data-target="#dashboard"
             aria-expanded="false" aria-controls="dashboard">
             <i className="fas fa-tachometer-alt"></i>Dashboard</li>
           <div className="nav-group collapse" id="dashboard">
             <Link to="/profile">
-              <li className="nav-item nav-link" id="profile" onClick={() => changeActiveTab("profile")}>Profile</li>
+              <li className="main-nav-item nav-item nav-link" id="profile" onClick={() => changeActiveTab("profile")}>Profile</li>
             </Link>
             <Link to="/account">
-              <li className="nav-item nav-link" id="account" onClick={() => changeActiveTab("account")}>Account</li>
+              <li className="main-nav-item nav-item nav-link" id="account" onClick={() => changeActiveTab("account")}>Account</li>
             </Link>
           </div>
 
-          <li className="nav-item nav-link nav-menu-header"
+          <li className="main-nav-item nav-item nav-link nav-menu-header"
             data-toggle="collapse" data-target="#billing"
             aria-expanded="false" aria-controls="billing">
             <i className="fas fa-credit-card"></i>Billing</li>
           <div className="nav-group collapse" id="billing">
             <Link to="/subscriptions">
-              <li className="nav-item nav-link" id="subscriptions" onClick={() => changeActiveTab("subscriptions")}>Subscriptions</li>
+              <li className="main-nav-item nav-item nav-link" id="subscriptions" onClick={() => changeActiveTab("subscriptions")}>Subscriptions</li>
             </Link>
             <Link to="customers">
-              <li className="nav-item nav-link" id="customers" onClick={() => changeActiveTab("customers")}>Customers</li>
+              <li className="main-nav-item nav-item nav-link" id="customers" onClick={() => changeActiveTab("customers")}>Customers</li>
             </Link>
             <Link to="invoices">
-              <li className="nav-item nav-link" id="invoices" onClick={() => changeActiveTab("invoices")}>Invoices</li>
+              <li className="main-nav-item nav-item nav-link" id="invoices" onClick={() => changeActiveTab("invoices")}>Invoices</li>
             </Link>
             <Link to="transactions">
-              <li className="nav-item nav-link" id="transactions" onClick={() => changeActiveTab("transactions")}>Transactions</li>
+              <li className="main-nav-item nav-item nav-link" id="transactions" onClick={() => changeActiveTab("transactions")}>Transactions</li>
             </Link>
           </div>
 
-          <li className="nav-item nav-link nav-menu-header"
+          <li className="main-nav-item nav-item nav-link nav-menu-header"
             data-toggle="collapse" data-target="#catalog"
             aria-expanded="false" aria-controls="catalog">
             <i className="fas fa-briefcase"></i>Catalog</li>
           <div className="nav-group collapse" id="catalog">
             <Link to="deals">
-              <li className="nav-item nav-link" id="deals" onClick={() => changeActiveTab("deals")}>Deals</li>
+              <li className="main-nav-item nav-item nav-link" id="deals" onClick={() => changeActiveTab("deals")}>Deals</li>
             </Link>
             <Link to="coupons">
               <li className="nav-item nav-link" id="coupons" onClick={() => changeActiveTab("coupons")}>Coupons</li>
             </Link>
           </div>
 
-          <li className="nav-item nav-link nav-menu-header"
+          <li className="main-nav-item nav-item nav-link nav-menu-header"
             data-toggle="collapse" data-target="#tools"
             aria-expanded="false" aria-controls="tools">
             <i className="fas fa-tools"></i>Tools</li>
           <div className="nav-group collapse" id="tools">
             <Link to="analytics">
-              <li className="nav-item nav-link" id="analytics" onClick={() => changeActiveTab("analytics")}>Analytics</li>
+              <li className="main-nav-item nav-item nav-link" id="analytics" onClick={() => changeActiveTab("analytics")}>Analytics</li>
             </Link>
             <Link to="history">
-              <li className="nav-item nav-link" id="history" onClick={() => changeActiveTab("history")}>History</li>
+              <li className="main-nav-item nav-item nav-link" id="history" onClick={() => changeActiveTab("history")}>History</li>
             </Link>
           </div>
 
-          <li className="nav-item nav-link nav-menu-header"
+          <li className="main-nav-item nav-item nav-link nav-menu-header"
             data-toggle="collapse" data-target="#settings"
             aria-expanded="false" aria-controls="settings">
             <i className="fas fa-cog"></i>Settings</li>
           <div className="nav-group collapse" id="settings">
             <Link to="info">
-              <li className="nav-item nav-link" id="info" onClick={() => changeActiveTab("info")}>Account Information</li>
+              <li className="main-nav-item nav-item nav-link" id="info" onClick={() => changeActiveTab("info")}>Account Information</li>
             </Link>
           </div>
 
