@@ -5,7 +5,7 @@ import './nav.css';
 
 function Nav(props) {
   const { toggleNav } = props;
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("account");
   
 
   const changeActiveTab = (tab) => {
@@ -14,6 +14,10 @@ function Nav(props) {
     }
     document.getElementById(tab).classList.add("active-tab");
     setActiveTab(tab)
+    // close the nav if the screen is small
+    if (window.innerWidth < 651) {
+      toggleNav();
+    }
   }
 
   return (
@@ -41,7 +45,7 @@ function Nav(props) {
               <li className="main-nav-item nav-item nav-link" id="profile" onClick={() => changeActiveTab("profile")}>Profile</li>
             </Link>
             <Link to="/account">
-              <li className="main-nav-item nav-item nav-link" id="account" onClick={() => changeActiveTab("account")}>Account</li>
+              <li className="main-nav-item nav-item nav-link active-tab" id="account" onClick={() => changeActiveTab("account")}>Account</li>
             </Link>
           </div>
 
